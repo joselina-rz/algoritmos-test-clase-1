@@ -14,11 +14,16 @@ public class CamelCase {
      * - Al
      * - Cine
      *
-     * @param palabra
+     * @param
      * @return
      */
     public static Integer resolver(String texto) {
-        //TODO: implementar
-        return null;
+        int cont=1;
+        for (int i=0;i<texto.length(); i++){
+            if (Character.isUpperCase(texto.charAt(i))) {
+                cont++;
+            }
+        }
+        return cont;
     }
 }

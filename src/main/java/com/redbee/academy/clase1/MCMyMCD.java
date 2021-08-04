@@ -11,8 +11,9 @@ public class MCMyMCD {
      * @return
      */
     public static Integer mcm(int num1, int num2) {
-        // TODO: implementar
-        return null;
+        Integer mcd = MCMyMCD.mcd(6, 9);
+        Integer result = (num1*num2)/mcd;
+        return result;
     }
 
     /**
@@ -23,7 +24,12 @@ public class MCMyMCD {
      * @return
      */
     public static Integer mcd(int num1, int num2) {
-        // TODO: implementar
-        return null;
+        int resg;//Para no perder b - algoritmo de Euclides
+        while (num2 != 0) {
+            resg = num2;
+            num2 = num1 % num2;
+            num1 = resg;
+        }
+        return num1;
     }
 }

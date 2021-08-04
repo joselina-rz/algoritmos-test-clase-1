@@ -13,6 +13,13 @@ public class PotenciaTests {
 
         Assertions.assertEquals(4, resultado);
     }
+    @Test
+    @DisplayName("Test 2 elevado a la ")
+    void testPotenciaCero() {
+        Integer resultado = Potencia.resolver(2, 0);
+
+        Assertions.assertEquals(1, resultado);
+    }
 
     @Test
     @DisplayName("Test 2 elevado a la 3")
